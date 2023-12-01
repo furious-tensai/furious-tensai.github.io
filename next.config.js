@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  exportPathMap: function () {
+      return {
+         "/": { page: "/" }
+      };
+   },
+  assetPrefix: '/furious-tensai.github.io',
   images: {
     remotePatterns: [
       {
