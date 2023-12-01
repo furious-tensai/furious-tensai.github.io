@@ -7,9 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@react-email/components": "^0.0.7",
@@ -35,8 +32,6 @@
     "typescript": "5.1.5"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.3",
-    "gh-pages": "^6.1.0"
-  },
-  "homepage": "https://furious-tensai.github.io"
+    "@types/react-vertical-timeline-component": "^3.3.3"
+  }
 }
