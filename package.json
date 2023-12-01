@@ -33,5 +33,6 @@
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.3"
-  }
+  },
+  "homepage": "https://furious-tensai.github.io/furious-tensai.github.io"
 }
