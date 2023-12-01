@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  exportPathMap: function () {
-      return {
-         "/": { page: "/" }
-      };
-   },
+  async generateStaticParams({ locales }) {
+    return [
+      { params: { id: 'first' }, locale: locales[0] },
+      { params: { id: 'second' }, locale: locales[0] },
+      // etc.
+    ];
+  },
   assetPrefix: '/furious-tensai.github.io',
   images: {
     remotePatterns: [
